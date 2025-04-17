@@ -10,10 +10,10 @@ HUGGINGFACE_SERVER_URL = "https://arefin-001-t4-pixp2pix.hf.space/generate"
 class GenerateInput(BaseModel):
     image_url: str
     prompt: str
-    negative_prompt: str
-    image_guidance_scale: float
-    guidance_scale: float
-    steps: int
+    steps: int = 20                  # Default value set to 20
+    guidance_scale: float = 7.5      # Default value set to 7.5
+    image_guidance_scale: float = 1.5  # Default value set to 1.5
+    negative_prompt: Optional[str] = None 
 
 @app.post("/generate")
 def proxy_generate(input: GenerateInput):
