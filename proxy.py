@@ -1,7 +1,7 @@
 from fastapi import FastAPI, Request
 from pydantic import BaseModel
 import requests
-
+from typing import Optional
 app = FastAPI()
 
 # Replace this with the actual URL of your HuggingFace server
