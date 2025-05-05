@@ -5,7 +5,7 @@ import json
 from typing import Optional
 from openai import OpenAI
 from google import genai
-from google.genai import types
+# from google.genai import types
 app = FastAPI()
 
 # Replace this with the actual URL of your HuggingFace server
@@ -97,9 +97,10 @@ def proxy_generate(input: GenerateInput):
         
         # If the llama refinement is requested
         if input.use_llama:
-            refined_prompts = get_refined_prompts(input.prompt)
+            # refined_prompts = get_refined_prompts(input.prompt)
             payload["prompt"] = input.prompt
-            payload["negative_prompt"] = refined_prompts["np"]
+            # payload["negative_prompt"] = refined_prompts["np"]
+            payload["negative_prompt"] = "low quality, bad anatomy, worst quality, low resolution, face distortion"
             # Remove the use_llama field as it's not needed by the HuggingFace server
             payload.pop("use_llama", None)
         
