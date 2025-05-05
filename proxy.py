@@ -5,6 +5,7 @@ import json
 from typing import Optional
 from openai import OpenAI
 from google import genai
+from google.genai import types
 app = FastAPI()
 
 # Replace this with the actual URL of your HuggingFace server
@@ -27,7 +28,7 @@ class GenerateInput(BaseModel):
 
 class CountryInfo(BaseModel):
     p: str
-    np: int
+    np: str
     
     
 def get_refined_prompts(prompt):
