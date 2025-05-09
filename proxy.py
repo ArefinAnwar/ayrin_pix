@@ -166,9 +166,9 @@ def proxy_generate(input: GenerateInput):
         # Remove the use_llama field as it's not needed by the HuggingFace server
         # payload.pop("use_llama", None)
         
-        result_json = json.loads(refined_prompts)
+        # result_json = json.loads(refined_prompts)
      
-        return result_json
+        return refined_prompts
     
     except Exception as e:
         return {"status": "error", "message": str(e)}
