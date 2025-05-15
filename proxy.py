@@ -125,7 +125,7 @@ def get_refined_prompts(prompt, img_url):
             config=types.GenerateContentConfig(
                 temperature=0.25,
 
-                response_modalities=["Text", "Image"]
+                response_modalities=["TEXT", "IMAGE"]
             ),
         )
 
