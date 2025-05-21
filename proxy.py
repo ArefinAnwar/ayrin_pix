@@ -26,8 +26,8 @@ class GenerateInput(BaseModel):
 class CountryInfo(BaseModel):
     p: str
     
-SUPABASE_URL = "https://atavrklgsvwarjemjvsx.supabase.co"
-SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF0YXZya2xnc3Z3YXJqZW1qdnN4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDQzODk1NDksImV4cCI6MjA1OTk2NTU0OX0.U2gqOZGlpXDeU5HjbvGvtZDCtyK_hqICsLX_mFWk_cw" # Keep this secret!
+SUPABASE_URL = "https://trblhcytzzdsvatxjbds.supabase.co"
+SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRyYmxoY3l0enpkc3ZhdHhqYmRzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDM5MzQ3NjIsImV4cCI6MjA1OTUxMDc2Mn0.o6ysuFzh0GsW5rMvoRCt6LGN61gsjJszuKPxNtflumw" # Keep this secret!
 BUCKET_NAME = "generated-images"
 
 try:
